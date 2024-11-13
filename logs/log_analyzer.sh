@@ -1,16 +1,12 @@
 #!/bin/bash
 
-
 # Function to display usage
-
 usage(){
-
 	echo " USAGE :$0 /home/ubuntu/logs/day10.log "
 	exit 1
-}
+ }
 
 # Check if the log file path is provided
-
 if [ $# -ne 1 ]; then
 	usage
 fi
@@ -18,15 +14,12 @@ fi
 LOG_FILE=$1
 
 # Check if the log file exists
-
 if [ ! -f "$LOG_FILE" ]; then
-
 	echo "Error: Log File $LOG_FILE does not exits."
 	exit 1
 fi
 
 # Variables
-
 ERROR_KEYWORD="ERROR"
 CRITICAL_KEYWORD="CRITICAL"
 DATE=$(date +"%Y-%m-%d")
@@ -37,7 +30,6 @@ ARCHIVE_DIR='processed_logs'
 {
 	echo "Date of analysis: $DATE"
 	echo "Log File Name: $LOG_FILE"
-
 } > "$SUMMARY_REPORT"
 
 # Total Line Processed
@@ -52,9 +44,7 @@ echo "Total error count: $ERROR_COUNT" >> "$SUMMARY_REPORT"
 echo "List of Critical events with line numbers:" >> "$SUMMARY_REPORT"
 grep -n "$CRITICAL_KEYWORD" "$LOG_FILE" >> "$SUMMARY_REPORT"
 
-
 # Identify the top 5 most comman error messages
-
 declare -A error_messages
 while IFS= read -r line; do
 	if [[ "$line" == *"$ERROR_KEYWORD"* ]]; then
@@ -62,7 +52,6 @@ while IFS= read -r line; do
 		((error_messages["$message"]++))
 	fi
 done < "$LOG_FILE"
-
 
 # Sort & Display top 5 error messages
 echo "Top 5 error Messages with their occurance count: " >> "$SUMMARY_REPORT"
