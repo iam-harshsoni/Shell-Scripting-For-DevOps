@@ -37,8 +37,10 @@ A sample log file named `sample_log.log` has been provided in the same directory
 
 ## Solution
 
----
-   ## Output
+- Bash Code for Reference.</br></br>
+![image](https://github.com/user-attachments/assets/75ccd4a3-d1ac-471e-9fe1-d81f2f657153)
+
+- Output. </br></br>
 ![image](https://github.com/user-attachments/assets/98c2fb95-b48f-4753-9474-5512598bcbd0)
 
 [LinkedIn](https://www.linkedin.com/in/harsh-soni-007hs/)
