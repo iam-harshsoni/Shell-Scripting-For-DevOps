@@ -1,0 +1,11 @@
+Date of analysis: 2024-11-13
+Log File Name: /home/ubuntu/logs/day10.log
+Total Line Processed: 2000
+Total error count: 13
+List of Critical events with line numbers:
+Top 5 error Messages with their occurance count: 
+1  [LearnerHandler-/10.10.34.13:57617:LearnerHandler@562] - Unexpected exception causing shutdown while sock still open
+1  [LearnerHandler-/10.10.34.13:57438:LearnerHandler@562] - Unexpected exception causing shutdown while sock still open
+1  [LearnerHandler-/10.10.34.13:57354:LearnerHandler@562] - Unexpected exception causing shutdown while sock still open
+1  [LearnerHandler-/10.10.34.12:59480:LearnerHandler@562] - Unexpected exception causing shutdown while sock still open
+1  [LearnerHandler-/10.10.34.12:59455:LearnerHandler@562] - Unexpected exception causing shutdown while sock still open
