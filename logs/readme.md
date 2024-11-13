@@ -35,4 +35,10 @@ Write a Bash script that automates the process of analyzing log files and genera
 
 A sample log file named `sample_log.log` has been provided in the same directory as this challenge file. You can use this file to test your script or use [this](https://github.com/logpai/loghub/blob/master/Zookeeper/Zookeeper_2k.log)
 
+## Solution
+
+---
+   ## Output
+![image](https://github.com/user-attachments/assets/98c2fb95-b48f-4753-9474-5512598bcbd0)
+
 [LinkedIn](https://www.linkedin.com/in/harsh-soni-007hs/)
